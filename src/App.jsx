@@ -1,11 +1,12 @@
-import NavBar from "./components/NavBar";
+import React, { useState } from 'react';
+import DarkModeButton from './components/DarkModeButton';
+import './App.css'; // Import a CSS file for styling
 
-function App()
-{
+function App() {
   return (
-    <>
-      <NavBar></NavBar>
-    </>
+    <div>
+     <DarkModeButton></DarkModeButton>
+    </div>
   );
 }
 
