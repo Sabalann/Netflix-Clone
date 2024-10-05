@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 
-
 function DarkModeButton () {
 
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -11,12 +10,12 @@ function DarkModeButton () {
     };
 
     return (
-        <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
-            <button onClick={toggleTheme}>
+        <>
+            <button onClick={toggleTheme} className={isDarkMode ? 'dark-mode' : 'light-mode'}>
             {isDarkMode ? 'Light' : 'Dark'}
             </button>
-        </div>
+        </>
     );
 }
 
-export default DarkModeButton;
+export default DarkModeButton;  

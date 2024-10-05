@@ -1,21 +1,54 @@
+:root {
+    --darkModeColor: #424242;
+    background-color: #424242;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-  }
+
+}
   
-  .light-mode {
+.light-mode {
     background-color: white;
     color: black;
-  }
+}
   
-  .dark-mode {
-    background-color: rgb(45, 45, 45);
+.dark-mode {
+    background-color: var(--darkModeColor);
     color: white;
-  }
+}
   
-  button {
+button {
     margin: 20px;
     padding: 10px 20px;
     cursor: pointer;
-  }
+}
+
+h1.red {
+  color: red;
+  display: inline;
+  font-size: 2rem;
+}
+
+div.navBar {
+  background-color: #424242;
+  display: flex;
+  padding: 0 4%;
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+  color: rgb(175, 174, 174);
+  font-size: small;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.navButton:hover {
+  color: white;
+  opacity: 1;
+}
