@@ -52,3 +52,12 @@ div.navBar {
   color: white;
   opacity: 1;
 }
+
+.movieList {
+  padding: 0 4%;
+}
+
+.movieList img {
+  padding: 0 2px;
+  border-radius: ;
+}
