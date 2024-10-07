@@ -40,9 +40,9 @@ div.navBar {
 }
 
 .navButton {
-  background-color: transparent;
   border: none;
   color: rgb(175, 174, 174);
+  background-color: transparent;
   font-size: small;
   opacity: 0.6;
   transition: 0.3s;
@@ -55,9 +55,28 @@ div.navBar {
 
 .movieList {
   padding: 0 4%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  border: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
 }
 
-.movieList img {
-  padding: 0 2px;
-  border-radius: ;
+.movieListH1 {
+  padding: 0 4%;
+}
+
+.movieThumb {
+  display: inline;
+  padding: 4px;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.movieThumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
