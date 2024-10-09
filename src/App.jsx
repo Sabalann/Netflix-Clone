@@ -11,7 +11,9 @@ function App() {
         <NavBar></NavBar>
       </div>
       <div className="hero dark-mode">
-        <MovieList></MovieList>
+        <MovieList title={"Your Favorites"}></MovieList>
+        <MovieList title={"Popular Now"}></MovieList>
+        <MovieList title={"Top Rated"}></MovieList>
       </div>
     </>
 

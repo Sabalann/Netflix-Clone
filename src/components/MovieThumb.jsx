@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 function MovieThumb({src, alt}) {
   return (
     <div className="movieThumb">

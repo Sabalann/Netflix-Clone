@@ -64,8 +64,8 @@ div.navBar {
   scroll-snap-type: x mandatory;
 }
 
-.movieListH1 {
-  padding: 0 4%;
+.movieListH1 h1 {
+  font-size: 1.5rem;
 }
 
 .movieThumb {
