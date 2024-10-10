@@ -47,11 +47,25 @@ function shuffleArray(array) {
 }
 
 
+
+
 function MovieList({title}) {
   const listRef = useRef<HTMLDivElement>(null);
-
+  
   shuffleArray(movies)
+  
+  const ScrollRightList = () => {
+    const list = listRef.current;
+    if (!list) return;
+    list.scrollLeft += 500; // Adjust the scroll amount as needed
+  };
 
+  const ScrollLeftList = () => {
+    const list = listRef.current;
+    if (!list) return;
+    list.scrollLeft -= 500; // Adjust the scroll amount as needed
+  };
+  
   useEffect(() => {
     const list = listRef.current;
     if (!list) return;
@@ -67,7 +81,7 @@ function MovieList({title}) {
   }, []);
 
   return (
-    <>
+    <div className="completeList">
       <div className="movieListH1">
         <h1>{title}</h1>
       </div>
@@ -76,8 +90,10 @@ function MovieList({title}) {
         {movies.concat(movies).map((movie, index) => (
           <MovieThumb key={index} src={movie.src} alt={movie.alt} />
         ))}
+        <button className="ScrollLeftButton" onClick={ScrollLeftList}>See More</button>
+        <button className="ScrollRightButton" onClick={ScrollRightList}>See More</button>
       </div>
-    </>
+    </div>
   );
 }
 

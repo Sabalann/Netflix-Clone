@@ -1,30 +1,29 @@
 :root {
-    --darkModeColor: #424242;
-    background-color: #424242;
-
+  --darkModeColor: #424242;
+  background-color: #424242;
+  background-color: var(--darkModeColor);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
   
 .light-mode {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
   
 .dark-mode {
-    background-color: var(--darkModeColor);
-    color: white;
+  background-color: var(--darkModeColor);
+  color: white;
 }
   
 button {
-    margin: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 h1.red {
@@ -53,12 +52,15 @@ div.navBar {
   opacity: 1;
 }
 
+.completeList {
+  padding: 3vw 0;
+}
+
 .movieList {
-  padding: 0 4%;
   display: grid;
+  gap: 1%;
   grid-auto-flow: column;
-  grid-auto-columns: 23%;
-  border: none;
+  grid-auto-columns: 15%;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -68,9 +70,28 @@ div.navBar {
   font-size: 1.5rem;
 }
 
+.movieList button {
+  height: 20%;
+  position: absolute;
+  align-self: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.movieList button:hover {
+  opacity: 1;
+}
+
+.ScrollLeftButton {
+  left: 0;
+}
+
+.ScrollRightButton {
+  right: 0;
+}
+
 .movieThumb {
   display: inline;
-  padding: 4px;
   width: 100%;
   scroll-snap-align: start;
 }
