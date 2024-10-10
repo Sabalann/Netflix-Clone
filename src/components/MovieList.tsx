@@ -18,6 +18,9 @@ import ninjaTurtles from "/src/assets/imgs/ninjaTurtles.jpg"; // @ts-ignore
 import prisonBreak from "/src/assets/imgs/prisonBreak.jpg"; // @ts-ignore
 import split from "/src/assets/imgs/split.jpg"; // @ts-ignore
 
+import ArrowRight from "./ArrowRight";
+import ArrowLeft from "./ArrowLeft";
+
 const movies = [
   { src: flashMovie, alt: "Flash Movie" },
   { src: venomMovie, alt: "Venom" },
@@ -90,11 +93,12 @@ function MovieList({title}) {
         {movies.concat(movies).map((movie, index) => (
           <MovieThumb key={index} src={movie.src} alt={movie.alt} />
         ))}
-        <button className="ScrollLeftButton" onClick={ScrollLeftList}>See More</button>
-        <button className="ScrollRightButton" onClick={ScrollRightList}>See More</button>
+        <button className="ScrollLeftButton" onClick={ScrollLeftList}><ArrowLeft></ArrowLeft></button>
+        <button className="ScrollRightButton" onClick={ScrollRightList}><ArrowRight></ArrowRight></button>
       </div>
     </div>
   );
 }
+
 
 export default MovieList;

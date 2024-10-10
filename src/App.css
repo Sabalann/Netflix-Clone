@@ -71,7 +71,7 @@ div.navBar {
 }
 
 .movieList button {
-  height: 20%;
+  height: min-content;
   position: absolute;
   align-self: center;
   opacity: 0;
