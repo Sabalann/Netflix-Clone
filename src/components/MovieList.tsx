@@ -87,14 +87,15 @@ function MovieList({title}) {
     <div className="completeList">
       <div className="movieListH1">
         <h1>{title}</h1>
+          <div className="hoverElement">Discover more <ArrowRight color={"#FFFFFF"}></ArrowRight></div>
       </div>
 
       <div className="movieList" ref={listRef}>
         {movies.concat(movies).map((movie, index) => (
           <MovieThumb key={index} src={movie.src} alt={movie.alt} />
         ))}
-        <button className="ScrollLeftButton" onClick={ScrollLeftList}><ArrowLeft></ArrowLeft></button>
-        <button className="ScrollRightButton" onClick={ScrollRightList}><ArrowRight></ArrowRight></button>
+        <button className="ScrollLeftButton" onClick={ScrollLeftList}><ArrowLeft color={"#373737"}></ArrowLeft></button>
+        <button className="ScrollRightButton" onClick={ScrollRightList}><ArrowRight color={"#373737"}></ArrowRight></button>
       </div>
     </div>
   );

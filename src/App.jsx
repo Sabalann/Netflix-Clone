@@ -14,6 +14,8 @@ function App() {
         <MovieList title={"Your Favorites"}></MovieList>
         <MovieList title={"Popular Now"}></MovieList>
         <MovieList title={"Top Rated"}></MovieList>
+        <MovieList title={"Upcoming"}></MovieList>
+        <MovieList title={"Now Playing"}></MovieList>
       </div>
     </>
 
