@@ -53,16 +53,38 @@ div.navBar {
 }
 
 .FeaturedFilm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30dvw;
+  height: fit-content; 
   background-color: var(--darkModeColor);
 }
 
-.FeaturedFilm iframe {
+.FeaturedFilm video {
   width: 100%;
-  height: 100%;
+  border-radius: 20px;
+}
+
+video::-webkit-media-controls
+{
+  display: none;
+}
+
+video::-webkit-media-controls-enclosure
+{
+  display: inline;
+}
+
+video::-webkit-media-controls-mute-button {
+  background-color: #f00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.FeaturedFilm .controls button {
+  background: transparent;
+  color: #fff;
+  font-weight: bolder;
+  text-shadow: 2px 1px 2px #000;
+  border: none;
+  cursor: pointer;
 }
 
 .completeList {

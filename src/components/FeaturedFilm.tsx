@@ -1,13 +1,12 @@
 import React from "react";
 
 function FeaturedFilm() {
+  const vidPath = "/src/assets/vids/Uprising _ Official Trailer _ Netflix.mp4"
   return (
     <div className="FeaturedFilm">
-      <iframe
-        src="https://www.youtube.com/embed/TqfaCAA1UeE"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        title="Featured Film"></iframe>
+        <video autoPlay={true} muted controls>
+          <source src={vidPath}></source>
+        </video>
     </div>
   );
 }

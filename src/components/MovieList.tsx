@@ -50,8 +50,6 @@ function shuffleArray(array) {
 }
 
 
-
-
 function MovieList({title}) {
   const listRef = useRef<HTMLDivElement>(null);
   
