@@ -58,13 +58,13 @@ function MovieList({title}) {
   const ScrollRightList = () => {
     const list = listRef.current;
     if (!list) return;
-    list.scrollLeft += 500; // Adjust the scroll amount as needed
+    list.scrollLeft += 500;
   };
 
   const ScrollLeftList = () => {
     const list = listRef.current;
     if (!list) return;
-    list.scrollLeft -= 500; // Adjust the scroll amount as needed
+    list.scrollLeft -= 500;
   };
   
   useEffect(() => {
