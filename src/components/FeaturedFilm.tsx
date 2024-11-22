@@ -1,7 +1,7 @@
 import React from "react";
 
 function FeaturedFilm() {
-  const vidPath = "/public/vids/NetflixTrailer.mp4"
+  const vidPath = "/dist/vids/NetflixTrailer.mp4"
   return (
     <div className="FeaturedFilm">
         <div className="video-wrapper">
