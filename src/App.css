@@ -198,7 +198,9 @@ video::-webkit-media-controls-mute-button {
 }
 
 .movieList button {
-  height: min-content;
+  background-color: transparent;
+  border: none;
+  height: 8dvw;
   position: absolute;
   align-self: center;
   opacity: 0;
@@ -207,12 +209,13 @@ video::-webkit-media-controls-mute-button {
   scrollbar-width: none;  /* Firefox */
 }
 
-.movieList::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
-}
-
 .movieList button:hover {
   opacity: 1;
+  background-color: rgba(0,0,0,0.51);
+}
+
+.movieList::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
 
 .ScrollLeftButton {
