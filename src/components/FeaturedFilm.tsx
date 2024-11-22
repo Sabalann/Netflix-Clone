@@ -1,12 +1,13 @@
 import React from "react";
+import featuredFilm from "/src/assets/vids/netflixtrailer.mp4"; // @ts-ignore
+
 
 function FeaturedFilm() {
-  const vidPath = "/dist/vids/NetflixTrailer.mp4"
   return (
     <div className="FeaturedFilm">
         <div className="video-wrapper">
             <video autoPlay={true} muted controls>
-              <source src={vidPath}></source>
+              <source src={featuredFilm}></source>
             </video>
         </div>
     </div>
