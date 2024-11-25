@@ -4,6 +4,8 @@
   --navBarButtonColor: #afaeae;
   background-color: #0c0c0c;
   background-color: var(--darkModeColor);
+  scroll-behavior: smooth;
+
 }
 
 body {
